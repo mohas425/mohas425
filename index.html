@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق النقاط والكلمات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>تطبيق النقاط والكلمات</h1>
+
+        <!-- صفحة تسجيل الدخول -->
+        <div id="login-section">
+            <button id="login-btn">تسجيل الدخول</button>
+        </div>
+
+        <!-- صفحة الأكواد -->
+        <div id="code-section" class="hidden">
+            <h2>أدخل الكود لتحصل على النقاط</h2>
+            <input type="text" id="code-input" placeholder="أدخل الكود هنا">
+            <button id="redeem-code-btn">استبدال الكود</button>
+            <p>النقاط: <span id="points-display">0</span></p>
+        </div>
+
+        <!-- صفحة استبدال النقاط بالكلمات -->
+        <div id="word-section" class="hidden">
+            <h2>استبدل النقاط بكلمة عشوائية</h2>
+            <button id="redeem-word-btn">استبدال النقاط</button>
+            <p>النقاط: <span id="points-display-word">0</span></p>
+            <p>الكلمة: <span id="random-word"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
